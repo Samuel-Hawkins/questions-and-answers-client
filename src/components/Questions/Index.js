@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import axios from 'axios'
 import apiUrl from './../../apiConfig'
+import Button from 'react-bootstrap/Button'
 // import Clock from 'react-clock'
 import messages from './../AutoDismissAlert/messages'
 
@@ -147,8 +148,8 @@ class QuestionIndex extends Component {
               </h5>
               <p className={question.answered ? 'answered' : ''}>{question.text}</p>
               <div className='d-flex flex-row-reverse'>
-                <span id={question._id} className='actions pointer' onClick={this.onDelete}>Delete</span>
-                <span className='actions'><Link to={`/questions/edit/${question._id}`}>Edit</Link></span>
+                <span id={question._id} className='actions pointer' onClick={this.onDelete}><Button id={question._id}>Delete</Button></span>
+                <span className='actions'><Button href={`#/questions/edit/${question._id}`}>Edit</Button></span>
                 <span className='actions pointer' onClick={this.onCompleted}></span>
               </div>
             </div>
@@ -164,7 +165,7 @@ class QuestionIndex extends Component {
             <h3>Your Questions</h3>
           </span>
           <span className="d-flex flex-row-reverse">
-            <Link to="/question/create">Create New question...</Link>
+            <Link to="/question/create">Create a new question...</Link>
           </span>
         </div>
         {jsx}
