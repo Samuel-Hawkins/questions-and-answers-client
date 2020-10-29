@@ -11,6 +11,8 @@ import ChangePassword from '../ChangePassword/ChangePassword'
 import CreateQuestion from './../Questions/Create'
 import QuestionIndex from './../Questions/Index'
 import EditQuestion from './../Questions/Edit'
+import QuestionPublic from './../Questions/Public'
+import ShowQuestion from './../Questions/Show'
 
 class App extends Component {
   constructor () {
@@ -65,6 +67,12 @@ class App extends Component {
           )} />
           <AuthenticatedRoute exact user={user} path='/questions/edit/:id' render={() => (
             <EditQuestion msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute exact user={user} path='/questions/public' render={() => (
+            <QuestionPublic msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute exact user={user} path='/questions/public/:id' render={() => (
+            <ShowQuestion msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>

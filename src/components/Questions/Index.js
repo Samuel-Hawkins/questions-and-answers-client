@@ -142,11 +142,11 @@ class QuestionIndex extends Component {
       jsx = (
         <div className="col-sm-10 col-md-8 mx-auto">
           {this.state.questions.map(question => (
-            <div key={question._id}>
-              <h5>
+            <div key={question._id} className='questions'>
+              <h5 className='padding'>
                 {question.question}
               </h5>
-              <p className={question.answered ? 'answered' : ''}>{question.text}</p>
+              <p className='padding'>{question.text}</p>
               <div className='d-flex flex-row-reverse'>
                 <span id={question._id} className='actions pointer' onClick={this.onDelete}><Button id={question._id}>Delete</Button></span>
                 <span className='actions'><Button href={`#/questions/edit/${question._id}`}>Edit</Button></span>
