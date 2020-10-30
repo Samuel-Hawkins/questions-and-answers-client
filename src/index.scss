@@ -1,1 +1,27 @@
+$theme-colors: (
+  "primary": #004225,
+  "custom": #ededed
+  );
+
 @import '~bootstrap/scss/bootstrap';
+
+.actions {
+  margin: 2px;
+}
+
+.questions {
+  border: solid black 1px;
+  margin-top: 2px;
+}
+
+.padding {
+  padding: 4px 0px 0px 7px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
