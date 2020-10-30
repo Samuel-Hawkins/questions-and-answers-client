@@ -18,7 +18,7 @@ class QuestionPublic extends Component {
   componentDidMount () {
     const { msgAlert } = this.props
     // making the API call
-    axios.get(apiUrl + '/questions/public', {
+    axios.get(apiUrl + '/questions-public', {
       headers: {
         'Authorization': `Bearer ${this.props.user.token}`
       }

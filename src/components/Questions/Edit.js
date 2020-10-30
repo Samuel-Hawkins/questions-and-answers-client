@@ -25,6 +25,7 @@ class EditQuestion extends Component {
       method: 'GET',
       headers: { 'Authorization': `Bearer ${this.props.user.token}` }
     })
+      // .then(res => console.log(res))
       .then(res => this.setState({
         questionItem: res.data.question,
         isLoaded: true

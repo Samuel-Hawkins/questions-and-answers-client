@@ -89,7 +89,6 @@ class QuestionIndex extends Component {
     const { msgAlert } = this.props
 
     // Set questions = the value of this.state.questions (ALL BUCKETS)
-    console.log(this.state.questions)
     const questions = this.state.questions
     // Find the specific question that was clicked on
     const question = questions.find(el => el._id === event.target.id)
