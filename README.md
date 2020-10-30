@@ -7,9 +7,10 @@ A simple StackOverflow type application
 
 1. Create a new account
 2. Login to the Questions and Answers application
-3. Create, edit, or delete items using the designated button
-5. View your All of your Questions
+3. Create, edit, or delete items using the designated buttons
+5. View All of your Questions
 6. Option to view other Questions on the public page
+7. Option to view a single Question by clicking on it on the public page
 
 
 ## Technologies Used
