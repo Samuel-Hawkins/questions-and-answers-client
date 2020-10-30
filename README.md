@@ -11,7 +11,17 @@ A simple StackOverflow type application
 5. View All of your Questions
 6. Option to view other Questions on the public page
 7. Option to view a single Question by clicking on it on the public page
+
+## Preparation
+
+ 1. Fork and clone this repository.
+ [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+ 2. Checkout to a new branch (optional)
+ 3. Install JavaScript dependencies with `npm install`.
+ 4. Run the development server with npm start.
+
 ## Screenshots
+
 Login page:
 ![Login](https://i.imgur.com/IqTSSVk.png)
 
