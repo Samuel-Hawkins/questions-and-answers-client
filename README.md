@@ -11,7 +11,12 @@ A simple StackOverflow type application
 5. View All of your Questions
 6. Option to view other Questions on the public page
 7. Option to view a single Question by clicking on it on the public page
+## Screenshots
+Login page:
+![Login](https://i.imgur.com/IqTSSVk.png)
 
+Questions Home Page:
+![Home Page](https://i.imgur.com/Vw9eVBa.png)
 
 ## Technologies Used
 
